@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryDark">#2196f3</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="hui">#aaaaaa</color>
+    <color name="line">#eeeeee</color>
+    <color name="black">#000000</color>
+    <color name="background">#eeeeee</color>
+    <color name="text_hui">#aaaaaa</color>
+    <color name="text_color">#7f7f7f</color>
+    <color name="text_hei">#000000</color>
+    <color name="text_bai">#ffffff</color>
+    <!--半透明-->
+    <color name="translucent">#11000000</color>
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+    <!--popup-->
+    <color name="drop_pop_menu_bg_color">#a0000000</color>
+</resources>

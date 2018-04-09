@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ZProject</string>
+    <string name="face_click_login">触摸屏幕开始识别</string>
+    //设置
+    <string-array name="city_array">
+        <item>北京</item>
+        <item>贵州</item>
+        <item>湖南</item>
+        <item>江西</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

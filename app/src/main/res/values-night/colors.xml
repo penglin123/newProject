@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--夜间主题色-->
+    <color name="colorPrimary">#0a0a0a</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#fc0404</color>
+    <color name="white">#ffffff</color>
+    <color name="hui">#aaaaaa</color>
+    <color name="line">#eeeeee</color>
+    <color name="background">#eeeeee</color>
+    <color name="black">#000000</color>
+    <color name="text_color">#7f7f7f</color>
+    <color name="text_hui">#aaaaaa</color>
+    <color name="text_hei">#000000</color>
+    <color name="text_bai">#ffffff</color>
+</resources>

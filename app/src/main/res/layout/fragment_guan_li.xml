@@ -1,0 +1,79 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="zhangjingfeng.com.zproject.fragment.GuanLiFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <zhangjingfeng.com.zproject.view.TextSwitcherView
+            android:id="@+id/text_switcher_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></zhangjingfeng.com.zproject.view.TextSwitcherView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="20dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="管理"
+                android:textColor="@color/text_color"/>
+        </LinearLayout>
+
+        <zhangjingfeng.com.zproject.view.MyGridView
+            android:id="@+id/guanli_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"></zhangjingfeng.com.zproject.view.MyGridView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="20dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="其他"
+                android:textColor="@color/text_color"/>
+        </LinearLayout>
+
+        <zhangjingfeng.com.zproject.view.MyGridView
+            android:id="@+id/qita_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"></zhangjingfeng.com.zproject.view.MyGridView>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

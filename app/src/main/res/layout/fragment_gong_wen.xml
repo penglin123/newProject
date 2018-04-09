@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <zhangjingfeng.com.zproject.view.scrollable.ScrollableLayout
+        android:id="@+id/sl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:indicator_drawable_selected="@color/colorPrimary"
+            app:indicator_drawable_unselected="@color/hui"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/gongwen_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:tabTextColor="@color/text_color"
+                app:tabSelectedTextColor="@color/text_hei"
+                app:tabGravity="center"
+                app:tabMode="scrollable" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:hint="搜索公文"
+                android:textColorHint="@color/text_hui"
+                android:drawableLeft="@mipmap/chaxun"
+                android:background="@color/white"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/gongwen_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </zhangjingfeng.com.zproject.view.scrollable.ScrollableLayout>
+
+</FrameLayout>

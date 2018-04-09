@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="基本">
+        <CheckBoxPreference
+            android:key="cb_pre"
+            android:summaryOff="未勾选"
+            android:summaryOn="已勾选"
+            android:title="标题" />
+        <EditTextPreference
+            android:dialogTitle="请输入..."
+            android:key="et_pre"
+            android:summary="ss"
+            android:title="输入框" />
+        <ListPreference
+            android:dialogTitle="选择一个城市"
+            android:entries="@array/city_array"
+            android:entryValues="@array/city_array"
+            android:key="list_pre"
+            android:summary="选择一个城市"
+            android:title="选择" />
+        <MultiSelectListPreference
+            android:key="msl_pre"
+            android:title="多选"
+            android:summary="未选择"
+            android:entries="@array/city_array"
+            android:entryValues="@array/city_array"/>
+        <RingtonePreference
+            android:title="铃声"
+            android:key="rt_pre"
+            android:summary=""
+            android:showDefault="true"
+            android:showSilent="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="高级">
+        <SwitchPreference
+            android:key="sw_pre"
+            android:summary="默认"
+            android:summaryOff="关"
+            android:summaryOn="开"
+            android:title="附加功能" />
+        <PreferenceScreen
+            android:dependency="sw_pre"
+            android:title="语音识别">
+            <intent
+                android:targetClass="com.example.myapplication.ActivityMiniRecog"
+                android:targetPackage="com.example.myapplication" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:dependency="sw_pre"
+            android:title="录音">
+            <intent
+                android:targetClass="com.example.myapplication.MyBroadcastActivity"
+                android:targetPackage="com.example.myapplication" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <Preference android:title="关于"/>
+</PreferenceScreen>
